@@ -1,0 +1,250 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#"
+     xml:base="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#studies -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#studies">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Module"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#first_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#first_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#last_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#last_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#studentID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#studentID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#stuffID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#stuffID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#CSModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#CSModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Lecturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#MathModule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#MathModule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Module"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Module -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Module"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#CS101 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#CS101"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#CS102 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#CS102"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Lecturer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Lecturer1">
+        <teaches rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#CS101"/>
+        <teaches rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#CS102"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avik</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jana</last_name>
+        <stuffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</stuffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Lecturer2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Lecturer2">
+        <teaches rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#M201"/>
+        <teaches rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#M202"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barun</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Das</last_name>
+        <stuffID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">202</stuffID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#M201 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#M201"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#M202 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#M202"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Student1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Student1">
+        <studies rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#M201"/>
+        <studies rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#M202"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rishi</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hatua</last_name>
+        <studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">456</studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Student2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Student2">
+        <studies rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#CS101"/>
+        <studies rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#CS102"/>
+        <studies rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#M201"/>
+        <first_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riju</first_name>
+        <last_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hatua</last_name>
+        <studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">576</studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#CSModule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Lecturer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#MathModule"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/untitled-ontology-student#Student"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,29 @@
+SELECT * {?pi rkt:associated rkt:Experiment1.  ?pi rkt:firstName ?firstname. ?pi rkt:homeInstitute ?homeInstitute}
+
+%% All PIs%%
+Q1:
+
+SELECT * {?experiments rkt:performedBy ?Mission.  
+                 ?PI rkt:associated ?experiments. ?PI rkt:firstName ?firstName.  ?PI  rkt:homeInstitute ?homeInstitute}
+
+Q2:
+
+SELECT *{?Shuttles rkt:launchedBy ?Mission. ?Experiment rkt:performedBy ?Mission}
+
+SELECT *{?Shuttles rkt:launchedBy ?Mission. ?Shuttles rkt:shuttleName "Atlantis"^^xsd:string.  ?Shuttles rkt:shuttleDateMissionLaunch "1970"^^xsd:string. ?Shuttles rkt:shuttleName  ?shuttleName}
+
+Q3:
+
+SELECT *{?Shuttles rkt:launchedBy ?Mission. ?Mission rkt:missionName "Hubble Space Telescope"^^xsd:string.  ?Crew rkt:hasSome ?Mission.   ?Crew rkt:Co-pilot ?CoPilot.   ?Crew rkt:Commandor ?Commandor.  ?Crew rkt:NASAAstronaut ?NasaAstronauts. ?Crew rkt:NASAPi ?NasaPi. ?Crew rkt:InternationScientist ?InternationalSci. ?Crew rkt:ScientificMembers ?ScientificMember }
+
+
+Q4: 
+
+
+SELECT *{?Shuttle rkt:repairBy ?Mission. ?Mission rkt:missionName "HubbleSpaceTelescope"^^xsd:string.  ?Crew rkt:hasSome ?Mission. ?Mission rkt:missionRepairStartDate ?StartDate. ?Mission rkt:missionRepairEndDate ?EndDate}
+
+
+Q9:
+SELECT* {?Crew rkt:hasSome ?Mission. ?Mission rkt:missionName "STS-114"^^xsd:string.?Mission rkt:missionName ?MissionName.}
+
+

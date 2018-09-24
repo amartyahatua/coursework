@@ -1,0 +1,6 @@
+Selection of eigenvalue: 
+
+In this experiment, I have checked errors for eigenvalues ranging from 20 to 100. 
+Minimum error is obtained is 0.06%. This error can be achieved for more than one eigenvalues.
+The minimum eigenvalue for which minimum error is achieved is 79. Between the range of eigenvalue
+ 79 to 89 maximum number of time (five times), minimum error is achieved.

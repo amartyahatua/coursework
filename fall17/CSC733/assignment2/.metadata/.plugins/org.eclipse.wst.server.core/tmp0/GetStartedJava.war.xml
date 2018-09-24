@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archive>
+    <dir sourceOnDisk="C:\Users\ahatua\Google Drive\fall17\CSC733\assignment2\get-started-java\target\m2e-wtp\web-resources" targetInArchive="/"/>
+    <dir sourceOnDisk="C:\Users\ahatua\Google Drive\fall17\CSC733\assignment2\get-started-java\src\main\webapp" targetInArchive="/"/>
+    <dir sourceOnDisk="C:\Users\ahatua\Google Drive\fall17\CSC733\assignment2\get-started-java\target\classes" targetInArchive="/WEB-INF/classes"/>
+    <file sourceOnDisk="C:\Users\ahatua\.m2\repository\com\cloudant\cloudant-client\2.7.0\cloudant-client-2.7.0.jar" targetInArchive="/WEB-INF/lib/cloudant-client-2.7.0.jar"/>
+    <file sourceOnDisk="C:\Users\ahatua\.m2\repository\com\google\code\gson\gson\2.7\gson-2.7.jar" targetInArchive="/WEB-INF/lib/gson-2.7.jar"/>
+    <file sourceOnDisk="C:\Users\ahatua\.m2\repository\commons-codec\commons-codec\1.6\commons-codec-1.6.jar" targetInArchive="/WEB-INF/lib/commons-codec-1.6.jar"/>
+    <file sourceOnDisk="C:\Users\ahatua\.m2\repository\com\cloudant\cloudant-http\2.7.0\cloudant-http-2.7.0.jar" targetInArchive="/WEB-INF/lib/cloudant-http-2.7.0.jar"/>
+    <file sourceOnDisk="C:\Users\ahatua\.m2\repository\commons-io\commons-io\2.4\commons-io-2.4.jar" targetInArchive="/WEB-INF/lib/commons-io-2.4.jar"/>
+    <file sourceOnDisk="C:\Users\ahatua\.m2\repository\javax\ws\rs\javax.ws.rs-api\2.0\javax.ws.rs-api-2.0.jar" targetInArchive="/WEB-INF/lib/javax.ws.rs-api-2.0.jar"/>
+</archive>

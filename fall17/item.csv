@@ -1,0 +1,29 @@
+4968,31202136508,1STOCKS,98640,1ABCFD
+7114,12122617681,2STOCKS,70795,2ABCFD
+19648,43778344882,3STOCKS,59283,3ABCFD
+12988,94679327099,4STOCKS,90627,4ABCFD
+1722,994340206,5STOCKS,30825,5ABCFD
+9137,52533712547,6STOCKS,84159,6ABCFD
+4004,6859638,7STOCKS,98449,7ABCFD
+7479,22587626819,8STOCKS,69184,8ABCFD
+10528,58787929147,9STOCKS,83067,9ABCFD
+4121,47879163600,10STOCKS,38035,10ABCFD
+
+
+	private String _sid;
+	private String _swid;
+	private String _squality;
+	private String _sdist1;
+	private String _sdist2;
+	private String _sdist3;
+	private String _sdist4;
+	private String _sdist5;
+	private String _sdist6;
+	private String _sdist7;
+	private String _sdist8;
+	private String _sdist9;
+	private String _sdist10;
+	private String _sydt;
+	private String _sordercnt;
+	private String _sremotecnt;
+	private String _sdata;

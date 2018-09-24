@@ -1,0 +1,661 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#"
+     xml:base="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#associated -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#associated">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Experiments"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#diploys -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#diploys">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#SatelliteLaunchMission"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Satellite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#generates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#generates"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#hasSome -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#hasSome">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Mission"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Crew"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#helpsToLaunch -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#helpsToLaunch">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#BoosterRocket"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Shuttle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#launchedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#launchedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Shuttle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#SatelliteLaunchMission"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#performedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#performedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Experiments"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Mission"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#reSupply -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#reSupply">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Shuttle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#ResupplyMission"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#repairBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#repairBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Shuttle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#RepairMission"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Co-pilot -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Co-pilot"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Commandor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Commandor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#InternationScientist -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#InternationScientist"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#NASAAstronaut -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#NASAAstronaut"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#NASAID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#NASAID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#NASAPeople"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#NASAPi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#NASAPi"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#ScientificMembers -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#ScientificMembers"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#People"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#experimentName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#experimentName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Experiments"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#fax -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#fax">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#People"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#firstName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#firstName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#People"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#homeInstitute -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#homeInstitute">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#PI"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#lastName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#lastName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#People"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#missionID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#missionID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Mission"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#missionName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#missionName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Mission"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#missionRepairEndDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#missionRepairEndDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#RepairMission"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#missionRepairStartDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#missionRepairStartDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#RepairMission"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#phone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#phone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#People"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#shuttleCrewMemberName1 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#shuttleCrewMemberName1"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#shuttleCrewMemberName2 -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#shuttleCrewMemberName2"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#shuttleDateMissionLaunch -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#shuttleDateMissionLaunch"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#shuttleDateMissionReturn -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#shuttleDateMissionReturn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#shuttleID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#shuttleID"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#shuttleName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#shuttleName"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#BoosterRocket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#BoosterRocket"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Crew -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Crew"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Data"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#ExperimentData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#ExperimentData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Experiments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Experiments"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#InternationalScientists -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#InternationalScientists">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#People"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#LaunchVehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#LaunchVehicle"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Mission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Mission"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#NASAPeople -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#NASAPeople">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#People"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#PI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#PI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#NASAPeople"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#People -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#People"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#RepairMission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#RepairMission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Mission"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#ResupplyMission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#ResupplyMission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Mission"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Runs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Runs"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Satellite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Satellite"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#SatelliteLaunchMission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#SatelliteLaunchMission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Mission"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Shuttle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Shuttle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#LaunchVehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#TransmittedData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#TransmittedData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#UnmannedRocket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#UnmannedRocket">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#LaunchVehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Experiment1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Experiment1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Experiments"/>
+        <performedBy rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#SatelliteLaunchMission1"/>
+        <experimentName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exp1</experimentName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Experiment2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Experiment2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Experiments"/>
+        <performedBy rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#RepairMission1"/>
+        <experimentName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Exp2</experimentName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#PI1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#PI1">
+        <associated rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Experiment1"/>
+        <NASAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">601</NASAID>
+        <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">joe.andy@nasa.org</email>
+        <firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Andy</firstName>
+        <homeInstitute rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA</homeInstitute>
+        <lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Joe</lastName>
+        <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3432345869</phone>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#PI2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#PI2">
+        <associated rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Experiment2"/>
+        <NASAID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">602</NASAID>
+        <email rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jenny.adams@nasa.org</email>
+        <firstName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jenny</firstName>
+        <homeInstitute rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NASA</homeInstitute>
+        <lastName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adams</lastName>
+        <phone rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6475832345</phone>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#RepairMission1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#RepairMission1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#RepairMission"/>
+        <missionID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">102</missionID>
+        <missionName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HubbleSpaceTelescope</missionName>
+        <missionRepairEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-20-1992</missionRepairEndDate>
+        <missionRepairStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-10-1992</missionRepairStartDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#ResupplyMission1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#ResupplyMission1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#ResupplyMission"/>
+        <missionID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">103</missionID>
+        <missionName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">InternationalSpaceStation</missionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#ResupplyMission2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#ResupplyMission2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#ResupplyMission"/>
+        <missionID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">105</missionID>
+        <missionName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">STS-114</missionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#SatelliteLaunchMission1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#SatelliteLaunchMission1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#SatelliteLaunchMission"/>
+        <missionID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</missionID>
+        <missionName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pioneer10</missionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#SatelliteLaunchMission2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#SatelliteLaunchMission2">
+        <missionID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">104</missionID>
+        <missionName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hubble Space Telescope</missionName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#crew1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#crew1">
+        <hasSome rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#SatelliteLaunchMission2"/>
+        <Co-pilot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ettore Appella</Co-pilot>
+        <Commandor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Altan Bonnet</Commandor>
+        <InternationScientist rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Albert S Paul</InternationScientist>
+        <NASAAstronaut rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Greti Aguilera</NASAAstronaut>
+        <NASAPi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mirit Aladjem</NASAPi>
+        <ScientificMembers rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Archer Trevor</ScientificMembers>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#crew2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#crew2">
+        <hasSome rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#RepairMission1"/>
+        <Co-pilot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baker, Chris</Co-pilot>
+        <Commandor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bailey-Wilson</Commandor>
+        <InternationScientist rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baier, Leslie</InternationScientist>
+        <NASAAstronaut rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Badea, Tudor</NASAAstronaut>
+        <NASAPi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bai, Yawen</NASAPi>
+        <ScientificMembers rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Balla, Tamas</ScientificMembers>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#crew3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#crew3">
+        <hasSome rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#ResupplyMission2"/>
+        <Co-pilot rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Faraldo Gómez José</Co-pilot>
+        <Commandor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Evan Michele K</Commandor>
+        <InternationScientist rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collins Peter Leon</InternationScientist>
+        <NASAAstronaut rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cohen, Leonardo</NASAAstronaut>
+        <NASAPi rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Colbert, Robert</NASAPi>
+        <ScientificMembers rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gadalla Shahinaz</ScientificMembers>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#shuttle1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#shuttle1">
+        <launchedBy rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#SatelliteLaunchMission1"/>
+        <shuttleCrewMemberName1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Abne Christian</shuttleCrewMemberName1>
+        <shuttleCrewMemberName2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acharya Jairaj</shuttleCrewMemberName2>
+        <shuttleDateMissionLaunch rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1970</shuttleDateMissionLaunch>
+        <shuttleDateMissionReturn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1972</shuttleDateMissionReturn>
+        <shuttleID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">201</shuttleID>
+        <shuttleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atlantis</shuttleName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#shuttle2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#shuttle2">
+        <repairBy rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#RepairMission1"/>
+        <shuttleCrewMemberName1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Derick</shuttleCrewMemberName1>
+        <shuttleCrewMemberName2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bob</shuttleCrewMemberName2>
+        <shuttleDateMissionLaunch rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1971</shuttleDateMissionLaunch>
+        <shuttleDateMissionReturn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1970</shuttleDateMissionReturn>
+        <shuttleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">202</shuttleID>
+        <shuttleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Atlantis</shuttleName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#shuttle3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#shuttle3">
+        <launchedBy rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#SatelliteLaunchMission2"/>
+        <shuttleCrewMemberName1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sheldon Cooper</shuttleCrewMemberName1>
+        <shuttleDateMissionLaunch rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1990</shuttleDateMissionLaunch>
+        <shuttleDateMissionReturn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1991</shuttleDateMissionReturn>
+        <shuttleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">203</shuttleID>
+        <shuttleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discovery</shuttleName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#shuttle4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#shuttle4">
+        <reSupply rdf:resource="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#ResupplyMission1"/>
+        <shuttleID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">204</shuttleID>
+        <shuttleName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zarya</shuttleName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#BoosterRocket"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#LaunchVehicle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#Mission"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

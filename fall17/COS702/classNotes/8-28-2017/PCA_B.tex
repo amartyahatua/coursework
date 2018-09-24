@@ -1,0 +1,175 @@
+\documentclass[12pt]{article}%
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}%
+\setcounter{MaxMatrixCols}{30}
+%TCIDATA{OutputFilter=latex2.dll}
+%TCIDATA{Version=4.10.0.2347}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+%TCIDATA{Created=Tuesday, August 29, 2017 09:48:56}
+%TCIDATA{LastRevised=Tuesday, August 29, 2017 11:32:00}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\begin{document}
+\center{\Large{PCA procedure}}
+
+\begin{enumerate}
+\item The given data can be written as an $m\times n$ matrix.%
+
+\[
+D=\left[
+\begin{array}
+[c]{cccc}%
+d_{11} & d_{12} & \cdots & d_{1n}\\
+d_{21} & d_{22} & \cdots & d_{2n}\\
+\cdots & \cdots & \cdots & \cdots\\
+d_{m1} & d_{m2} & \cdots & d_{mn}%
+\end{array}
+\right]
+\]
+
+
+\item Construct an $n\times n$ covarance matrix as follows:%
+
+\[
+C=\left[
+\begin{array}
+[c]{cccc}%
+c_{11} & c_{12} & \cdots & d_{1n}\\
+c_{21} & c_{22} & \cdots & c_{2n}\\
+\cdots & \cdots & \cdots & \cdots\\
+c_{n1} & c_{n2} & \cdots & c_{nn}%
+\end{array}
+\right]
+\]
+where
+\[
+c_{ij}=cov(d_{i},d_{j})=\frac{1}{n-1}\sum_{k=1}^{m}(d_{ki}-\mu_{d_{i}}%
+)(d_{kj}-\mu_{d_{j}})
+\]
+and
+\[
+\mu_{d_{i}}=\frac{1}{n}\sum_{k=1}^{m}d_{ki}, \quad\mu_{dj}=\frac{1}{n}%
+\sum_{k=1}^{m}d_{kj},
+\]
+The covarance matrix is a symmetric matrix.
+
+\item Compute the eigenvalues $\{\lambda_{1},\lambda_{2},...,\lambda_{n}\}$
+and the corresponding eigenvectors $\{e_{1},e_{2},$...,$e_{n}\}.$ Keep the
+larger eigenvalues and its eigenvector and ignore the smaller eigenvalues.
+
+\item Choose the larger eigenvalues $\{\lambda_{1},\lambda_{2},...,\lambda
+_{p}\}$ and eigenvectors $\{e_{1},e_{2},$...,$e_{p}\}$ to reduce the dimension
+from $n$ to $p.$ We obtain the following principal component of eigenvectors%
+
+\[
+E=\left[
+\begin{array}
+[c]{cccc}%
+e_{11} & e_{12} & \cdots & e_{1p}\\
+e_{21} & e_{22} & \cdots & e_{2p}\\
+\cdots & \cdots & \cdots & \cdots\\
+e_{n1} & e_{n2} & \cdots & e_{np}%
+\end{array}
+\right]
+\]
+
+
+\item The matrix after dimension reduction can be expressed as follows:%
+
+\[
+F=(E^{T}\widehat{D}^{T})^{T}%
+\]
+where%
+\[
+\widehat{D}=\left[
+\begin{array}
+[c]{cccc}%
+d_{11}-\mu_{d_{1}} & d_{12}-\mu_{d_{2}} & \cdots & d_{1n}-\mu_{d_{n}}\\
+d_{21}-\mu_{d_{1}} & d_{22}-\mu_{d_{2}} & \cdots & d_{2n}-\mu_{d_{n}}\\
+\cdots & \cdots & \cdots & \cdots\\
+d_{m1}-\mu_{d_{1}} & d_{n2}-\mu_{d_{2}} & \cdots & d_{mn}-\mu_{d_{n}}%
+\end{array}
+\right]
+\]
+
+
+$F$ is the data after dimension reduction. The dimension of $F$ is $m\times
+p.$
+\end{enumerate}
+
+\begin{example}
+\medskip
+
+$A=\left(
+\begin{array}
+[c]{ccc}%
+2.6 & 1.4 & 2.8\\
+0.5 & 0.7 & 0.3\\
+2.2 & 2.9 & 1.4\\
+1.9 & 2.2 & 0.9\\
+3.1 & 3.0 & 2.1\\
+2.3 & 2.7 & 1.6\\
+2.0 & 1.6 & 0.4\\
+1.0 & 1.1 & 0.5\\
+1.5 & 1.6 & 2.3\\
+1.3 & 0.9 & 1.7
+\end{array}
+\right)  $
+
+\noindent B=repmat(mean(A),10,1);
+
+\noindent$\widehat{D}=A-B$;
+
+\noindent C=cov($\widehat{D}$);
+
+\noindent[eigenvectors, eigenvalues]=eig(C);
+
+\noindent E=[eigenvectors(:,2), eigenvectors(:,3)];
+
+\noindent$F=(E^{T} \widehat{D}^{T})^{T}$
+
+\noindent$F=\left(
+\begin{array}
+[c]{cc}%
+-1.2730 & 0.9681\\
+0.0585 & -2.0552\\
+0.6946 & 0.8587\\
+0.6368 & 0.0008\\
+0.2976 & 1.8414\\
+0.4268 & 0.9091\\
+0.6822 & -0.5521\\
+0.1947 & -1.4077\\
+-0.8752 & 0.1429\\
+-0.8431 & -0.7061
+\end{array}
+\right)  $
+
+
+\end{example}
+
+
+\end{document} 

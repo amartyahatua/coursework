@@ -1,0 +1,163 @@
+package wasdev.sample.store;
+
+import java.beans.AppletInitializer;
+import java.util.ArrayList;
+
+import com.cloudant.client.api.Database;
+
+import wasdev.sample.Customer;
+import wasdev.sample.District;
+import wasdev.sample.Item;
+import wasdev.sample.NewOrder;
+import wasdev.sample.Order;
+import wasdev.sample.Stock;
+import wasdev.sample.Warehouse;
+import wasdev.sample.rest.ItemAPI;
+
+public class Transaction {
+	public String c_discount;
+	public String c_last;
+	public String c_credit;
+	public String w_tax;
+	public String d_next_o_id;
+	public String d_tax_INTO;
+	public String d_tax;
+	public String o_id;
+	public String o_all_local; 
+	public String ol_i_id;
+	public String ol_quantity;
+	public String i_price;
+	public String i_name;
+	public String i_data;
+	public String ol_supply_w_id;
+	public String s_quantity;
+	public String s_data;
+	public String s_dist_01;
+	public String s_dist_02;
+	public String s_dist_03;
+	public String s_dist_04;
+	public String s_dist_05;
+	public String s_dist_06;
+	public String s_dist_07;
+	public String s_dist_08;
+	public String s_dist_09;
+	public String s_dist_10;
+	
+	
+	
+	
+	public void select1(String w_id, String d_id, String c_id, Warehouse wrh, District disinfo, Customer custinfo,
+			Order odr, ArrayList<String> olOidList, ArrayList<String> olDidList, ArrayList<String> olWidList, 
+			ArrayList<String> olNumList, ArrayList<String> olIList, ArrayList<String> olDupplyWidList, 
+			ArrayList<String> olDelDList, ArrayList<String> olQntList, ArrayList<String> olAmtList, 
+			ArrayList<String> olDstInfoList)
+	{
+		if(custinfo.getCdid().equals(d_id) && custinfo.getCwid().equals(w_id))
+		{
+			c_discount = custinfo.getCdiscount();
+			c_last = custinfo.getClast();
+			c_credit = custinfo.getCcredit();
+			w_tax = wrh.getWtax();
+		}
+		else
+			System.out.println("No");
+		
+		if(disinfo.getDwid().equals(w_id))
+		{
+			d_next_o_id = disinfo.getDnextoid();
+			d_tax = disinfo.getDtax();
+			System.out.println("Yes");
+		}
+		
+		
+		if(disinfo.getDwid().equals(w_id))
+		{
+			int intd_next_o_id = Integer.parseInt(d_next_o_id);
+			intd_next_o_id++;
+			d_next_o_id = Integer.toString(intd_next_o_id);
+		}
+		
+		o_id = d_next_o_id;
+		o_all_local = "0";
+		
+		Order ord = new Order();
+		ord.setOid(o_id);
+		ord.setOdid(odr.getOdid());
+		ord.setOwid(odr.getOwid());
+		ord.setOcid(ord.getOcid());
+		ord.setOentryd(ord.getOentryd());
+		ord.setOolcnt(ord.getOolcnt());
+		ord.setOalllocal(o_all_local);
+		
+		
+		CloudantItemStore cld = new CloudantItemStore();
+		Database orderdb = ItemAPI.store.database("order", true);
+		cld.persistAllOrder(orderdb,ord);
+		
+		
+		NewOrder nwodr = new NewOrder();
+		nwodr.setNooid(o_id);
+		nwodr.setNodid(odr.getOdid());
+		nwodr.setNowid(odr.getOwid());
+		Database nwodrdb = ItemAPI.store.database("new_oder", true);
+		cld.persistAllNewOrder(nwodrdb, nwodr);
+		
+		int o_ol_cnt = Integer.parseInt(odr.getOolcnt());
+		ArrayList<Integer> priceList = new ArrayList<>();
+		ArrayList<String>  itemNameList = new ArrayList<>();
+		ArrayList<String>  stockList = new ArrayList<>();
+
+		for (int ol_number=0; ol_number<o_ol_cnt; ol_number++ )
+		{	
+			// Check all the hardcoded values and find appropriate replacement 
+			ol_i_id = olIList.get(ol_number);
+			ol_quantity = olQntList.get(ol_number);
+			Item it = cld.getItem(ol_i_id);
+			i_price = it.get_iPrice();
+			i_name = it.get_iName();
+			i_data = it.get_iData();
+			
+			priceList.add(Integer.parseInt(i_price));
+			itemNameList.add(i_name);
+			
+			
+			Stock stk = cld.getStock(ol_i_id);
+			ol_supply_w_id = olDupplyWidList.get(ol_number);
+			if(stk.getSwid().equals(ol_supply_w_id)) 
+			{
+				s_quantity=stk.getSquantity();
+				s_data=stk.getSdata();
+				s_dist_01=stk.getSdist1();
+				s_dist_02=stk.getSdist2();
+				s_dist_03=stk.getSdist3();
+				s_dist_04=stk.getSdist4();
+				s_dist_05=stk.getSdist5();
+				s_dist_06=stk.getSdist6();
+				s_dist_07=stk.getSdist7();
+				s_dist_08=stk.getSdist8();
+				s_dist_09=stk.getSdist9();
+				s_dist_10=stk.getSdist10();
+				
+				ol_i_id = olDelDList.get(ol_number);
+				String tempDistLast = ol_i_id.substring(ol_i_id.length()-2, ol_i_id.length());
+				olDstInfoList.add("s_dist_"+tempDistLast);
+				stockList.add(s_quantity);
+				int s_quantityInt  = Integer.parseInt(s_quantity);
+				int ol_quantityInt = Integer.parseInt(ol_quantity);
+				if( s_quantityInt < ol_quantityInt )
+					s_quantityInt = s_quantityInt - ol_quantityInt;
+				else
+					s_quantityInt = s_quantityInt-ol_quantityInt+91;
+				stk.setSquantity(Integer.toString(s_quantityInt));
+				cld..updateStock();
+				
+			}
+			
+			
+			
+		}
+	
+	}
+	
+	
+}

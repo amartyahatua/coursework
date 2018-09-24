@@ -1,0 +1,160 @@
+package generatedata;
+
+import java.io.FileWriter;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.Random;
+import java.util.stream.Collectors;
+
+public class GenerateData {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			//createItemData();
+			createStockData();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public static void createStockData() throws IOException {
+		
+		int elements = 100;
+		ArrayList<String> iid = new ArrayList<>();
+		FileWriter writer = new FileWriter("stock.csv");
+		for(int i=0; i<elements; i++)
+		{	
+			iid = new ArrayList<>();
+			iid.add(Integer.toString(random(1000,9999)));
+			
+			iid.add(Integer.toString(random(100,500)));
+			iid.add(Integer.toString(random(100,500)));
+			iid.add(Integer.toString(random(100,500)));
+			iid.add(Integer.toString(random(100,500)));
+			iid.add(Integer.toString(random(100,500)));
+			iid.add(Integer.toString(random(100,500)));
+			iid.add(Integer.toString(random(100,500)));
+			iid.add(Integer.toString(random(100,500)));
+			iid.add(Integer.toString(random(100,500)));
+			iid.add(Integer.toString(random(100,500)));
+			iid.add(date());
+			iid.add(getSaltString(10));
+			iid.add(Integer.toString(random(100, 200)));
+			iid.add(Integer.toString(random(100, 200)));
+			String collect = iid.stream().collect(Collectors.joining(","));
+			writer.append(collect);
+			writer.append("\n");
+		}
+		writer.close();
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	public static void createCustomer() throws IOException
+	{
+		ArrayList<String> iid = new ArrayList<>();
+		FileWriter writer = new FileWriter("cutomer.csv");
+		int[] arrayDist  =  {200001001,200001002,200001003,200001004,200001005,200001006,200001007,200001008,200001009,200001010,
+						200001010,200001011,200001012,200001013,200001014,200001015,200001016,200001017,200001018,200001019};
+		int[] arrayWh = {1001,1002};
+		
+		
+		
+		
+		for(int i=10000;i<40000;i++)
+		{
+			iid = new ArrayList<>();
+			iid.add(Integer.toString(i));
+			iid.add(Integer.toString(arrayDist[random(0,18)]));
+			iid.add(Integer.toString(arrayWh[random(0,1)]));
+			iid.add(getSaltString(10));
+			iid.add(getSaltString(10));
+			iid.add(getSaltString(10)); // Lastname
+			iid.add("C_Street_1".concat(getSaltString(5)));
+			iid.add("C_Street_2".concat(getSaltString(5)));
+			iid.add(getSaltString(10));
+		}
+	}
+	
+	
+	
+	
+	public static void createItemData() throws IOException
+	{
+		int elements = 100;
+		ArrayList<String> iid = new ArrayList<>();
+		FileWriter writer = new FileWriter("item.csv");
+		for(int i=0; i<elements; i++)
+		{	
+			iid = new ArrayList<>();
+			iid.add(Integer.toString(random(20000,80000)));
+			iid.add(Integer.toString(random(20000,80000)));
+			iid.add(getSaltString(10));
+			iid.add(Integer.toString(random(100, 200)));
+			iid.add(getSaltString(50));
+			String collect = iid.stream().collect(Collectors.joining(","));
+			writer.append(collect);
+			writer.append("\n");
+		}
+		writer.close();
+	}
+
+
+
+	static String getSaltString(int size) {
+		String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+		StringBuilder salt = new StringBuilder();
+		Random rnd = new Random();
+		while (salt.length() < size) { // length of the random string.
+			int index = (int) (rnd.nextFloat() * SALTCHARS.length());
+			salt.append(SALTCHARS.charAt(index));
+		}
+		String saltStr = salt.toString();
+		return saltStr;
+
+	}
+
+
+	static String getString(int num)
+	{	
+
+		String name = "";
+		while(num>10)
+		{
+			int nChar = num%10;
+			char c = (char)nChar;
+			name=name+c;
+			num=num/10;
+		}
+
+
+		return name;
+	}
+
+	static int random(int left, int right)
+	{
+		String rString;
+		int R  =(int)( left + (int) (Math.random()*(right - left)));
+
+		return R;
+
+	}
+	
+	static String date()
+	
+	{
+		Date dNow = new Date( );
+	      SimpleDateFormat ft = 
+	      new SimpleDateFormat ("yyyy.MM.dd");
+	      return ft.format(dNow);
+	}
+}	

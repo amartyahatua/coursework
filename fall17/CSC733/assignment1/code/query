@@ -1,0 +1,52 @@
+SELECT * {?pi rkt:associated rkt:Experiment1.  ?pi rkt:firstName ?firstname. ?pi rkt:homeInstitute ?homeInstitute}
+
+
+%% All PIs%%
+
+PREFIX rkt:<http://www.semanticweb.org/amartya/ontologies/2017/7/rocket_science#>
+
+
+Q1:
+
+SELECT * {?experiments rkt:performedBy ?Mission.  
+                 ?PI rkt:associated ?experiments. ?PI rkt:firstName ?firstName.  ?PI  rkt:homeInstitute ?homeInstitute}
+
+Q2:
+
+SELECT *{?Shuttles rkt:launchedBy ?Mission. ?Experiment rkt:performedBy ?Mission}
+
+SELECT *{?Shuttles rkt:launchedBy ?Mission. ?Shuttles rkt:shuttleName "Atlantis"^^xsd:string.  ?Shuttles rkt:shuttleDateMissionLaunch "1970"^^xsd:string. ?Shuttles rkt:shuttleName  ?shuttleName}
+
+Q3:
+
+SELECT *{?Shuttles rkt:launchedBy ?Mission. ?Mission rkt:missionName "Hubble Space Telescope"^^xsd:string.  ?Crew rkt:hasSome ?Mission.   ?Crew rkt:Co-pilot ?CoPilot.   ?Crew rkt:Commandor ?Commandor.  ?Crew rkt:NASAAstronaut ?NasaAstronauts. ?Crew rkt:NASAPi ?NasaPi. ?Crew rkt:InternationScientist ?InternationalSci. ?Crew rkt:ScientificMembers ?ScientificMember }
+
+
+Q4: 
+
+SELECT *{?Shuttle rkt:launchedBy ?Mission. ?Mission rkt:missionName "Hubble Space Telescope"^^xsd:string.  ?Crew rkt:hasSome ?Mission. ?Mission rkt:missionRepairStartDate ?StartDate. ?Mission rkt:missionRepairEndDate ?EndDate. ?Shuttle rkt:shuttleType ?ShuttleType. FILTER(?ShuttleType="repair"^^xsd:string ) }
+
+
+Q5:
+SELECT  ?Mission ?Shuttle{?Shuttle rkt:launchedBy ?Mission. ?Crew rkt:hasSome ?Mission. ?Crew rkt:Co-pilot ?Copilot. ?Crew rkt:NASAAstronaut ?NasaAstro. ?Crew rkt:Commandor ?Commandor. ?Crew rkt:InternationScientist ?InternationScientist. ?Crew rkt:NASAPi ?NasaPi. FILTER (?Copilot  = "Terry Willcutt"  || ?NasaAstro = "Terry Willcutt"|| ?Commandor = "Terry Willcutt" || ?InternationScientist = "Terry Willcutt" || ?NasaPi = "Terry Willcutt" )}
+
+
+Q6:
+SELECT  *{?Crew rkt:hasSome ?Mission. ?Crew rkt:CommandorSex ?Sex.
+	FILTER (?Sex  = "Female" ) }
+
+Q7:
+SELECT  *{?Crew rkt:hasSome ?Mission. ?Crew rkt:InternationScientistNationality ?Nation.
+	FILTER (?Nation  = "Japan" || ?Nation  = "Russia" || ?Nation  = "France") }
+
+Q8:
+
+SELECT  ?Mission ?Shuttle{ ?Shuttle rkt:launchedBy ?Mission. ?Mission rkt:missionName "InternationalSpaceStation"^^xsd:string}
+
+Q9:
+SELECT* {?Crew rkt:hasSome ?Mission. ?Mission rkt:missionName "STS-114"^^xsd:string.?Mission rkt:missionName ?MissionName.}
+
+Q10:
+
+SELECT  *{?Shuttle rkt:launchedBy ?Mission. ?Shuttle rkt:SatteliteLaunchDate ?Date. FILTER(?Date  = 2003 || ?Date = 2002)}
+

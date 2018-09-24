@@ -1,0 +1,178 @@
+------Start of DE processing------ = [11/9/17 7:53:41:429 CST]
+Exception = java.io.FileNotFoundException
+Source = com.ibm.wsspi.kernel.service.utils.TimestampUtils
+probeid = 60
+Stack Dump = java.io.FileNotFoundException: C:\Users\ahatua\Google Drive\fall17\CSC733\assignment2\liberty\usr\servers\defaultServer\workarea\org.eclipse.osgi\11\data\config.last.use\com.ibm.ws.logging.osgi_1.0.18.cl170320170927-1854 (Access is denied)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at java.io.FileWriter.<init>(FileWriter.java:90)
+	at com.ibm.wsspi.kernel.service.utils.TimestampUtils.writeTimeToFile(TimestampUtils.java:57)
+	at com.ibm.ws.config.xml.internal.BundleProcessor$ExtendedBundle.writeTimestamp(BundleProcessor.java:803)
+	at com.ibm.ws.config.xml.internal.BundleProcessor.processBundleConfig(BundleProcessor.java:436)
+	at com.ibm.ws.config.xml.internal.BundleProcessor.addBundles(BundleProcessor.java:328)
+	at com.ibm.ws.config.xml.internal.BundleProcessor.startProcessor(BundleProcessor.java:167)
+	at com.ibm.ws.config.xml.internal.SystemConfiguration.start(SystemConfiguration.java:142)
+	at com.ibm.ws.config.xml.internal.WSConfigXMLActivator.start(WSConfigXMLActivator.java:101)
+	at com.ibm.ws.config.internal.WSConfigActivator.start(WSConfigActivator.java:31)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:774)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:724)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:932)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:309)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:581)
+	at org.eclipse.osgi.container.Module.start(Module.java:449)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1620)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1600)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1571)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1514)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+Dump of callerThis
+null
+Dump of objectArray[0]
+Object type = java.io.File
+  fs = class java.io.WinNTFileSystem@3c12c557
+    slash = \
+    altSlash = /
+    semicolon = ;
+    driveDirCache = class java.lang.String[26]
+      driveDirCache[0] = null
+      driveDirCache[1] = null
+      driveDirCache[2] = null
+      driveDirCache[3] = null
+      driveDirCache[4] = null
+      driveDirCache[5] = null
+      driveDirCache[6] = null
+      driveDirCache[7] = null
+      driveDirCache[8] = null
+      driveDirCache[9] = null
+      driveDirCache[10] = null
+      driveDirCache[11] = null
+      driveDirCache[12] = null
+      driveDirCache[13] = null
+      driveDirCache[14] = null
+      driveDirCache[15] = null
+      driveDirCache[16] = null
+      driveDirCache[17] = null
+      driveDirCache[18] = null
+      driveDirCache[19] = null
+      driveDirCache[20] = null
+      driveDirCache[21] = null
+      driveDirCache[22] = null
+      driveDirCache[23] = null
+      driveDirCache[24] = null
+      driveDirCache[25] = null
+    cache = class java.io.ExpiringCache@3be2b41f
+      millisUntilExpiration = 30000
+      map = class java.io.ExpiringCache$1@34a10307
+      queryCount = 115
+      queryOverflow = 300
+      MAX_ENTRIES = 200
+    prefixCache = class java.io.ExpiringCache@6546845d
+      millisUntilExpiration = 30000
+      map = class java.io.ExpiringCache$1@7a300d6a
+      queryCount = 68
+      queryOverflow = 300
+      MAX_ENTRIES = 200
+    BA_EXISTS = 1
+    BA_REGULAR = 2
+    BA_DIRECTORY = 4
+    BA_HIDDEN = 8
+    ACCESS_READ = 4
+    ACCESS_WRITE = 2
+    ACCESS_EXECUTE = 1
+    SPACE_TOTAL = 0
+    SPACE_FREE = 1
+    SPACE_USABLE = 2
+    useCanonCaches = true
+    useCanonPrefixCache = true
+  path = "C:\Users\ahatua\Google Drive\fall17\CSC733\assignment2\liberty\usr\servers\defaultServer\workarea\org.eclipse.osgi\11\data\config.last.use\com.ibm.ws.logging.osgi_1.0.18.cl170320170927-1854"
+  status = class java.io.File$PathStatus@565b9a4e
+    INVALID = class java.io.File$PathStatus@41d76fe0
+      INVALID = class java.io.File$PathStatus@41d76fe0
+      CHECKED = class java.io.File$PathStatus@565b9a4e
+      $VALUES = class java.io.File$PathStatus[2]
+      name = "INVALID"
+      ordinal = 0
+    CHECKED = class java.io.File$PathStatus@565b9a4e
+    $VALUES = class java.io.File$PathStatus[2]
+      $VALUES[0] = class java.io.File$PathStatus@41d76fe0
+      $VALUES[1] = class java.io.File$PathStatus@565b9a4e
+    name = "CHECKED"
+    ordinal = 1
+  prefixLength = 3
+  separatorChar = \
+  separator = "\"
+  pathSeparatorChar = ;
+  pathSeparator = ";"
+  PATH_OFFSET = 16
+  PREFIX_LENGTH_OFFSET = 12
+  UNSAFE = class sun.misc.Unsafe@70d5c5e3
+    theUnsafe = class sun.misc.Unsafe@70d5c5e3
+    INVALID_FIELD_OFFSET = -1
+    ARRAY_BOOLEAN_BASE_OFFSET = 16
+    ARRAY_BYTE_BASE_OFFSET = 16
+    ARRAY_SHORT_BASE_OFFSET = 16
+    ARRAY_CHAR_BASE_OFFSET = 16
+    ARRAY_INT_BASE_OFFSET = 16
+    ARRAY_LONG_BASE_OFFSET = 16
+    ARRAY_FLOAT_BASE_OFFSET = 16
+    ARRAY_DOUBLE_BASE_OFFSET = 16
+    ARRAY_OBJECT_BASE_OFFSET = 16
+    ARRAY_BOOLEAN_INDEX_SCALE = 1
+    ARRAY_BYTE_INDEX_SCALE = 1
+    ARRAY_SHORT_INDEX_SCALE = 2
+    ARRAY_CHAR_INDEX_SCALE = 2
+    ARRAY_INT_INDEX_SCALE = 4
+    ARRAY_LONG_INDEX_SCALE = 8
+    ARRAY_FLOAT_INDEX_SCALE = 4
+    ARRAY_DOUBLE_INDEX_SCALE = 8
+    ARRAY_OBJECT_INDEX_SCALE = 4
+    ADDRESS_SIZE = 8
+  serialVersionUID = 301077366599181567
+  filePath = null
+  $assertionsDisabled = true
+
+Dump of objectArray[1]
+Object type = java.lang.Long
+  MIN_VALUE = -9223372036854775808
+  MAX_VALUE = 9223372036854775807
+  TYPE = class java.lang.Class@7d9d1a19
+    ANNOTATION = 8192
+    ENUM = 16384
+    SYNTHETIC = 4096
+    cachedConstructor = null
+    newInstanceCallerCache = null
+    name = "long"
+    allPermDomain = null
+    useCaches = true
+    reflectionData = null
+    classRedefinedCount = 0
+    genericInfo = null
+    serialVersionUID = 3206093459760846163
+    serialPersistentFields = class java.io.ObjectStreamField[0]
+    reflectionFactory = class sun.reflect.ReflectionFactory@552026dc
+      initted = true
+      reflectionFactoryAccessPerm = class java.lang.RuntimePermission@3f21666b
+      soleInstance = class sun.reflect.ReflectionFactory@552026dc
+      langReflectAccess = class java.lang.reflect.ReflectAccess@43556f4c
+      noInflation = false
+      inflationThreshold = 15
+    initted = true
+    enumConstants = null
+    enumConstantDirectory = null
+    annotationData = null
+    annotationType = null
+    classValueMap = null
+  value = 1510235620164
+  SIZE = 64
+  BYTES = 8
+  serialVersionUID = 4290774380558885855
+  serialVersionUID = -8742448824652078965
+

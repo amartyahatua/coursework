@@ -1,0 +1,6 @@
+
+ Index  Count  Time of first Occurrence    Time of last Occurrence     Exception SourceId ProbeId
+------+------+---------------------------+---------------------------+---------------------------
+     0      1   11/29/17 14:15:54:652 CST   11/29/17 14:15:54:652 CST java.lang.NullPointerException com.ibm.ws.webcontainer.filter.WebAppFilterManager.invokeFilters 1105
+                                                                            - C:\Users\ahatua\Google Drive\fall17\CSC733\assignment2\liberty\usr\servers\defaultServer\logs\ffdc\ffdc_17.11.29_14.15.54.0.log
+------+------+---------------------------+---------------------------+---------------------------

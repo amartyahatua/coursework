@@ -1,0 +1,431 @@
+********************************************************************************
+product = WebSphere Application Server 17.0.0.3 (wlp-1.0.18.cl170320170927-1854)
+wlp.install.dir = C:/Users/ahatua/Google Drive/fall17/CSC733/assignment2/liberty/
+java.home = C:\Program Files\Java\jdk1.8.0_111\jre
+java.version = 1.8.0_111
+java.runtime = Java(TM) SE Runtime Environment (1.8.0_111-b14)
+os = Windows 10 (10.0; amd64) (en_US)
+process = 58760@usm217848
+********************************************************************************
+[11/29/17 19:01:52:026 CST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
+[11/29/17 19:01:52:051 CST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/17.0.0.3/lafiles/en.html
+[11/29/17 19:01:58:488 CST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 7.085 seconds
+[11/29/17 19:01:58:649 CST] 00000018 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0007I: Feature update started.
+[11/29/17 19:02:10:559 CST] 00000011 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0007I: The security service is starting...
+[11/29/17 19:02:11:908 CST] 00000011 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1123I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been activated. 
+[11/29/17 19:02:12:244 CST] 0000001c com.ibm.ws.security.token.ltpa.internal.LTPAKeyCreateTask    I CWWKS4105I: LTPA configuration is ready after 0.363 seconds.
+[11/29/17 19:02:12:669 CST] 00000011 com.ibm.ws.app.manager.internal.monitor.DropinMonitor        A CWWKZ0058I: Monitoring dropins for applications. 
+[11/29/17 19:02:13:265 CST] 0000001a com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0219I: TCP Channel defaultHttpEndpoint has been started and is now listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 9080.
+[11/29/17 19:02:14:938 CST] 00000011 com.ibm.ws.cache.ServerCache                                 I DYNA1001I: WebSphere Dynamic Cache instance named baseCache initialized successfully.
+[11/29/17 19:02:14:943 CST] 00000011 com.ibm.ws.cache.ServerCache                                 I DYNA1071I: The cache provider default is being used.
+[11/29/17 19:02:14:946 CST] 00000011 com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[11/29/17 19:02:16:320 CST] 0000002c com.ibm.ws.app.manager.AppMessageHelper                      I CWWKZ0018I: Starting application get-started-java.
+[11/29/17 19:02:17:946 CST] 0000002c org.jboss.weld.Version                                       I WELD-000900: 2.4.3 (Final)
+[11/29/17 19:02:18:949 CST] 0000002c com.ibm.ws.session.WASSessionCore                            I SESN8501I: The session manager did not find a persistent storage location; HttpSession objects will be stored in the local application server's memory.
+[11/29/17 19:02:18:964 CST] 0000002c com.ibm.ws.webcontainer.osgi.webapp.WebGroup                 I SRVE0169I: Loading Web Module: GetStartedJava.
+[11/29/17 19:02:18:966 CST] 0000002c com.ibm.ws.webcontainer                                      I SRVE0250I: Web Module GetStartedJava has been bound to default_host.
+[11/29/17 19:02:18:967 CST] 0000002c com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0016I: Web application available (default_host): http://localhost:9080/GetStartedJava/
+[11/29/17 19:02:18:984 CST] 0000002c com.ibm.ws.app.manager.AppMessageHelper                      A CWWKZ0001I: Application get-started-java started in 2.665 seconds.
+[11/29/17 19:02:19:045 CST] 00000018 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0012I: The server installed the following features: [jsp-2.3, ejbLite-3.2, managedBeans-1.0, servlet-3.1, jsf-2.2, beanValidation-1.1, ssl-1.0, jndi-1.0, localConnector-1.0, appSecurity-2.0, jsonp-1.0, jdbc-4.1, jaxrs-2.0, el-3.0, jaxrsClient-2.0, json-1.0, jpaContainer-2.1, cdi-1.2, distributedMap-1.0, webProfile-7.0, websocket-1.1, jpa-2.1].
+[11/29/17 19:02:19:046 CST] 00000018 com.ibm.ws.kernel.feature.internal.FeatureManager            I CWWKF0008I: Feature update completed in 20.587 seconds.
+[11/29/17 19:02:19:046 CST] 00000018 com.ibm.ws.kernel.feature.internal.FeatureManager            A CWWKF0011I: The server defaultServer is ready to run a smarter planet.
+[11/29/17 19:02:19:346 CST] 0000001d com.ibm.ws.session.WASSessionCore                            I SESN0176I: A new session context will be created for application key default_host/GetStartedJava
+[11/29/17 19:02:19:361 CST] 0000001d com.ibm.ws.util                                              I SESN0172I: The session manager is using the Java default SecureRandom implementation for session ID generation.
+[11/29/17 19:02:19:901 CST] 0000001d com.ibm.ws.cache.CacheServiceImpl                            I DYNA1056I: Dynamic Cache (object cache) initialized successfully.
+[11/29/17 19:02:20:257 CST] 0000001b com.ibm.ws.webcontainer.osgi.mbeans.PluginGenerator          I SRVE9103I: A configuration file for a web server plugin was automatically generated for this server at C:\Users\ahatua\Google Drive\fall17\CSC733\assignment2\liberty\usr\servers\defaultServer\logs\state\plugin-cfg.xml.
+[11/29/17 19:02:21:286 CST] 00000021 SystemOut                                                    O Running locally. Looking for credentials in cloudant.properties
+[11/29/17 19:02:21:298 CST] 00000021 SystemOut                                                    O Connecting to Cloudant
+[11/29/17 19:02:21:608 CST] 00000021 .ibm.ws.jaxrs.2.0.common:1.0.18.cl170320170927-1854(id=184)] I Setting the server's publish address to be /api/
+[11/29/17 19:02:22:073 CST] 00000021 com.ibm.ws.webcontainer.servlet                              I SRVE0242I: [get-started-java] [/GetStartedJava] [wasdev.sample.rest.ItemAPI]: Initialization successful.
+[11/29/17 19:02:25:692 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:02:28:113 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:02:30:369 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:02:32:634 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:02:34:876 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:02:37:131 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:02:39:394 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:02:41:650 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:02:43:911 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:02:46:155 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:02:48:394 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:02:50:646 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:02:52:905 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:02:55:158 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:02:57:403 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:02:59:646 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:01:888 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:04:137 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:06:394 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:08:643 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:10:890 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:13:140 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:15:385 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:17:645 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:19:893 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:22:135 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:24:387 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:26:632 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:28:893 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:31:137 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:33:391 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:35:638 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:37:885 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:40:141 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:42:390 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:44:636 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:46:882 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:49:126 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:51:374 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:53:613 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:55:863 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:03:58:110 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:00:361 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:02:611 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:04:859 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:07:109 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:09:367 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:11:618 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:13:865 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:16:117 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:18:365 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:20:614 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:22:873 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:25:136 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:27:383 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:29:636 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:31:911 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:34:171 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:36:424 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:38:686 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:40:934 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:43:181 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:45:430 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:47:673 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:49:937 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:52:187 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:54:442 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:56:685 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:04:58:929 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:01:190 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:03:434 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:05:690 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:07:931 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:10:211 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:12:465 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:14:716 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:16:984 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:19:233 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:21:490 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:23:742 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:25:996 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:28:246 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:30:496 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:32:745 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:35:201 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:37:445 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:39:702 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:41:956 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:44:232 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:46:484 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:48:742 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:50:991 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:53:253 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:55:507 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:05:57:752 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:00:008 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:02:266 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:04:519 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:06:769 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:09:026 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:11:279 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:13:529 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:15:779 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:18:021 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:20:270 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:22:535 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:24:789 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:27:039 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:29:317 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:31:571 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:33:910 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:36:168 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:38:417 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:40:666 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:42:917 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:45:165 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:47:406 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:49:658 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:51:909 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:54:158 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:56:435 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:06:58:685 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:00:937 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:03:192 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:05:437 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:07:702 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:09:964 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:12:225 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:14:488 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:16:738 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:19:003 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:21:414 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:23:660 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:25:976 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:28:292 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:30:590 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:32:851 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:35:143 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:37:488 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:39:751 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:42:003 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:44:389 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:46:664 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:48:935 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:51:200 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:53:599 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:55:875 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:07:58:398 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:00:665 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:02:928 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:05:190 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:07:484 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:09:855 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:12:217 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:14:646 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:16:994 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:19:337 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:21:600 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:23:865 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:26:119 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:28:378 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:30:727 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:32:974 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:35:227 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:37:475 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:39:728 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:41:971 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:44:219 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:46:472 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:48:720 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:50:965 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:53:224 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:55:473 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:57:722 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:08:59:970 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:02:222 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:04:472 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:06:728 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:08:984 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:11:241 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:13:510 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:15:750 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:17:998 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:20:252 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:22:510 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:24:752 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:27:030 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:29:287 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:31:542 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:33:797 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:36:043 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:38:294 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:40:550 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:42:805 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:45:057 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:47:311 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:49:564 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:51:859 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:54:129 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:56:398 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:09:58:647 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:00:892 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:03:144 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:05:401 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:07:725 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:09:979 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:12:238 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:14:494 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:16:938 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:19:357 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:21:625 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:23:872 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:26:136 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:28:445 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:30:710 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:33:042 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:35:330 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:37:625 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:40:100 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:42:415 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:44:668 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:47:101 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:49:386 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:51:660 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:53:929 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:56:192 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:10:58:489 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:00:750 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:03:016 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:05:410 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:07:899 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:10:408 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:12:794 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:15:282 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:17:672 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:20:158 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:22:436 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:24:698 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:26:948 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:29:200 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:31:439 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:33:692 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:35:944 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:38:187 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:40:425 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:42:704 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:47:155 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:49:416 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:51:673 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:53:932 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:56:188 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:11:58:438 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:00:690 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:02:934 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:05:179 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:07:425 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:09:684 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:11:933 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:14:184 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:16:433 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:18:677 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:20:924 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:23:173 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:25:420 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:27:670 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:29:924 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:32:167 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:34:408 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:36:655 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:38:902 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:41:142 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:43:388 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:45:637 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:47:879 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:50:119 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:52:360 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:54:610 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:56:857 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:12:59:101 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:01:350 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:03:600 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:05:839 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:08:075 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:10:318 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:12:567 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:14:814 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:17:054 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:19:296 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:21:551 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:23:797 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:26:044 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:28:290 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:30:538 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:32:790 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:35:026 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:37:278 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:39:513 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:41:753 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:44:005 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:46:240 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:48:481 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:50:725 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:52:970 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:55:209 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:57:447 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:13:59:689 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:01:943 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:04:195 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:06:442 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:08:686 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:10:931 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:13:172 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:15:416 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:17:653 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:19:893 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:22:142 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:24:383 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:26:630 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:28:879 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:31:127 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:33:374 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:35:616 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:37:857 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:40:107 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:42:355 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:44:591 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:46:831 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:49:072 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:51:310 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:53:552 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:55:795 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:14:58:040 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:00:283 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:02:532 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:04:781 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:07:028 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:09:268 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:11:516 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:13:764 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:16:005 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:18:251 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:20:496 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:22:744 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:24:984 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:27:226 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:29:474 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:31:720 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:33:971 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:36:223 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:38:465 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:40:706 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:42:947 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:45:189 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:47:434 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:49:682 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:51:933 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:54:179 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:55:602 CST] 00000149 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  A CWWKE1100I: Waiting for up to 30 seconds for the server to quiesce.
+[11/29/17 19:15:55:607 CST] 0000014a com.ibm.ws.tcpchannel.internal.TCPChannel                    I CWWKO0220I: TCP Channel defaultHttpEndpoint has stopped listening for requests on host 127.0.0.1  (IPv4: 127.0.0.1) port 9080.
+[11/29/17 19:15:55:608 CST] 0000014a com.ibm.ws.http.internal.VirtualHostImpl                     A CWWKT0017I: Web application removed (default_host): http://localhost:9080/GetStartedJava/
+[11/29/17 19:15:56:424 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:15:58:670 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:00:915 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:03:173 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:05:417 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:07:661 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:09:909 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:12:160 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:14:413 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:16:656 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:17:232 CST] 0000000f com.ibm.ws.kernel.launch.internal.ServerCommandListener      A CWWKE0055I: Server shutdown requested on Wednesday, November 29, 2017 at 7:16 PM. The server defaultServer is shutting down.
+[11/29/17 19:16:18:907 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:21:153 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:23:405 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:25:606 CST] 00000149 com.ibm.ws.runtime.update.internal.RuntimeUpdateManagerImpl  W CWWKE1102W: The quiesce operation did not complete. The server will now stop.
+[11/29/17 19:16:25:653 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:27:898 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:30:146 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:32:399 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:34:640 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:36:890 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:39:133 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:41:379 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:43:620 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:45:869 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:48:117 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:50:364 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:52:606 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:54:853 CST] 00000021 SystemOut                                                    O Sleeping ---------------
+[11/29/17 19:16:55:703 CST] 00000149 com.ibm.ws.security.ready.internal.SecurityReadyServiceImpl  I CWWKS0009I: The security service has stopped.
+[11/29/17 19:16:55:721 CST] 00000149 ibm.ws.security.authentication.internal.jaas.JAASServiceImpl I CWWKS1124I: The collective authentication plugin with class name NullCollectiveAuthenticationPlugin has been deactivated. 
+[11/29/17 19:16:56:361 CST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: The server defaultServer stopped after 15 minutes, 5.012 seconds.

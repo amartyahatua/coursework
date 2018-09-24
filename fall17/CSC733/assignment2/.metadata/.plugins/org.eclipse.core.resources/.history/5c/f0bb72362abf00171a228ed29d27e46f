@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form id="myForm" action="/action_page.php" method="get" target="_blank">
+  First name: <input type="text" name="fname" value="Donald"><br>
+  Last name: <input type="text" name="lname" value="Duck"><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Click the "Change method" button to change the method in the form above.</p>
+
+<p><b>Note:</b> Click the "Submit" button before and after you have clicked the "Change method" button, and check the browser's address bar to see the effect.</p>
+
+<button onclick="myFunction()">Change method</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    document.getElementById("myForm").method = "post";
+    document.getElementById("demo").innerHTML = "The method was set to 'post'.";
+}
+</script>
+
+</body>
+</html>
